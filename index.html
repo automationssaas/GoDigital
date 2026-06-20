@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoStack — 3 plug-and-play n8n automations</title>
+<style>
+  :root{--bg:#0b0f1a;--card:#141a2b;--ink:#e8edf7;--mut:#9aa6c0;--acc:#5b8cff;--acc2:#36e0a4;--line:#222b44}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  .pill{display:inline-block;background:rgba(91,140,255,.12);color:var(--acc);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px}
+  header{text-align:center;padding:72px 0 48px}
+  h1{font-size:clamp(30px,5vw,50px);line-height:1.12;letter-spacing:-.02em}
+  h1 span{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--mut);font-size:19px;max-width:620px;margin:20px auto 0}
+  .cta{display:inline-block;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04101a;font-weight:800;text-decoration:none;padding:16px 34px;border-radius:12px;margin-top:30px;font-size:17px}
+  .cta.sm{padding:13px 26px;font-size:15px;margin-top:0}
+  .micro{color:var(--mut);font-size:13px;margin-top:14px}
+  section{padding:46px 0;border-top:1px solid var(--line)}
+  h2{font-size:27px;letter-spacing:-.01em;margin-bottom:8px}
+  .lead{color:var(--mut);margin-bottom:26px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{font-size:18px;margin-bottom:8px}
+  .card p{color:var(--mut);font-size:15px}
+  .tag{font-size:12px;color:var(--acc2);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .price{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch}
+  .pcard{flex:1;min-width:240px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center}
+  .pcard.hot{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}
+  .amt{font-size:42px;font-weight:800;margin:6px 0}
+  .amt small{font-size:16px;color:var(--mut);font-weight:500}
+  ul.chk{list-style:none;text-align:left;margin:18px 0;display:inline-block}
+  ul.chk li{padding:6px 0 6px 26px;position:relative;color:var(--ink)}
+  ul.chk li:before{content:"✓";position:absolute;left:0;color:var(--acc2);font-weight:800}
+  .faq dt{font-weight:700;margin-top:18px}
+  .faq dd{color:var(--mut);margin-top:4px}
+  footer{text-align:center;color:var(--mut);font-size:13px;padding:40px 0}
+  .note{background:rgba(54,224,164,.08);border:1px solid var(--line);border-radius:12px;padding:14px 18px;color:var(--mut);font-size:14px;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="pill">AutoStack v1 · for n8n</span>
+    <h1>Stop rebuilding the <span>same 3 automations</span> from scratch</h1>
+    <p class="sub">Three battle-tested n8n workflows that capture leads, repurpose content with AI, and onboard clients — import in 60 seconds, live in an afternoon.</p>
+    <a class="cta" href="#buy">Get AutoStack →</a>
+    <p class="micro">Instant download · Works on free self-hosted n8n · 14-day no-questions refund</p>
+  </header>
+
+  <section>
+    <h2>The problem</h2>
+    <p class="lead">You already know automations save hours. But every new flow means staring at a blank canvas, wiring the same webhook → enrich → notify plumbing again, and debugging expressions. AutoStack hands you the finished wiring.</p>
+    <div class="grid">
+      <div class="card"><span class="tag">Workflow 01</span><h3>Lead Capture → CRM</h3><p>Form/webhook → optional enrichment → Google Sheet CRM → Slack alert → instant auto-reply to the lead. Never lose an inbound again.</p></div>
+      <div class="card"><span class="tag">Workflow 02</span><h3>AI Content Repurposer</h3><p>Paste one blog or transcript → GPT returns a LinkedIn post, an X thread, and a newsletter blurb → saved to your content calendar.</p></div>
+      <div class="card"><span class="tag">Workflow 03</span><h3>Client Onboarding + Invoice</h3><p>New client → Drive folder created, welcome email sent, invoice logged and emailed. Your whole kickoff, automated.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's inside</h2>
+    <ul class="chk">
+      <li>3 importable <strong>.json</strong> workflows (clean, documented, version-stable)</li>
+      <li>Step-by-step setup guide — every editable field marked</li>
+      <li>No paid n8n plan needed — runs on free self-hosted</li>
+      <li>Uses standard nodes + plain HTTP, so nothing breaks on update</li>
+      <li>Free lifetime updates to v1.x</li>
+    </ul>
+    <div class="note">Built by an automation studio that ships these for paying clients. You're getting the production versions, not toy demos.</div>
+  </section>
+
+  <section id="buy">
+    <h2>Pricing</h2>
+    <p class="lead">One-time. Yours forever.</p>
+    <div class="price">
+      <div class="pcard">
+        <span class="tag">Starter</span>
+        <div class="amt">€19</div>
+        <p style="color:var(--mut)">Any single workflow</p>
+        <ul class="chk"><li>1 workflow of your choice</li><li>Setup guide</li><li>v1.x updates</li></ul>
+        <a class="cta sm" href="LEMON_SQUEEZY_LINK_STARTER">Buy one</a>
+      </div>
+      <div class="pcard hot">
+        <span class="tag">Full Stack · best value</span>
+        <div class="amt">€39</div>
+        <p style="color:var(--mut)">All 3 workflows</p>
+        <ul class="chk"><li>All 3 workflows</li><li>Setup guide + checklist</li><li>v1.x updates</li><li>Priority email support</li></ul>
+        <a class="cta sm" href="LEMON_SQUEEZY_LINK_BUNDLE">Get the stack</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <dl class="faq">
+      <dt>Do I need a paid n8n account?</dt><dd>No. Everything runs on free self-hosted n8n (Docker) or the n8n Cloud trial.</dd>
+      <dt>Do I need to code?</dt><dd>No. You import the file and replace a few labelled values (your sheet ID, email, channel). The guide walks each one.</dd>
+      <dt>What if I get stuck?</dt><dd>Full Stack buyers get priority email support. Need it fully customized or hosted for you? That's our done-for-you service — just reply.</dd>
+      <dt>Refunds?</dt><dd>14 days, no questions asked.</dd>
+    </dl>
+  </section>
+
+  <footer>AutoStack v1 · Sold via Lemon Squeezy (handles EU VAT automatically) · © 2026</footer>
+</div>
+</body>
+</html>
